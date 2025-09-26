@@ -1,5 +1,8 @@
 import re
 def regex_classification(log_message):
+    # Clean the message: remove extra quotes and whitespace
+    cleaned_message = log_message.strip().strip('"').strip()
+    
     patterns = {
         r"User User\d+ logged (in|out).": "User Action",
         r"Backup (started|ended) at .*": "System Notification",
@@ -15,7 +18,7 @@ def regex_classification(log_message):
         r"Server \d+ experienced potential security incident, review required": "Security Alert"
     }
     for pattern, label in patterns.items():
-        if re.match(pattern, log_message, re.IGNORECASE):
+        if re.match(pattern, cleaned_message, re.IGNORECASE):
             return label
     return None
 

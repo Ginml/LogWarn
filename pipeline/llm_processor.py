@@ -107,8 +107,6 @@ Log message: "{log_message}"
         
         # Valid categories
         valid_categories = {
-            "Critical Error", "Security Alert", "Error", "Resource Usage",
-            "HTTP Status", "User Action", "System Notification", 
             "Workflow Error", "Deprecation Warning"
         }
         

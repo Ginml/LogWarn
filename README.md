@@ -12,7 +12,7 @@ A log classification system that implements a multi-tiered approach using regex 
 
 ## Architecture
 
-![System Architecture](resources/architecture.png)
+![System Architecture](resources/pics/architecture.png)
 
 The system implements a three-tier classification approach:
 1. **Regex Processing**: Fast pattern matching for common log formats
@@ -35,6 +35,11 @@ log_warn/
 ├── resources/             # Static resources and outputs
 └── requirements.txt       # Python dependencies
 ```
+
+## Screenshots
+
+![Dashboard](resources/pics/dashboard.png)
+![Dashboard Statistics](resources/pics/dashboard_stats.png)
 
 ## Installation
 
